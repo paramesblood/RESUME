@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ความสำเร็จ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #f5faff;
+      --text-color: #1f2937;
+      --accent-color: #3b82f6;
+      --secondary-color: #10b981;
+      --card-bg: #ffffff;
+    }
+
+    body.dark {
+      --bg-color: #111827;
+      --text-color: #f9fafb;
+      --accent-color: #60a5fa;
+      --secondary-color: #34d399;
+      --card-bg: #1f2937;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Prompt', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 32px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0;
+      color: var(--accent-color);
+    }
+
+    section {
+      margin-top: 30px;
+    }
+
+    h2 {
+      font-size: 22px;
+      color: var(--accent-color);
+      border-left: 6px solid var(--accent-color);
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    .achievement {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .achievement img {
+      max-width: 40%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      margin-bottom: 12px;
+    }
+
+    .achievement p {
+      font-size: 16px;
+      color: var(--text-color);
+      margin: 0 auto;
+      max-width: 700px;
+    }
+
+    .back-link {
+      margin-top: 30px;
+      display: inline-block;
+      background-color: var(--accent-color);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .back-link:hover {
+      background-color: var(--secondary-color);
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--accent-color);
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">สลับธีม</button>
+
+  <div class="container">
+    <header>
+      <h1>ความสำเร็จ</h1>
+    </header>
+
+    <section>
+      <h2>🏅 ตัวอย่างความสำเร็จ</h2>
+
+      <div class="achievement">
+        <img src="images/cert1.png" alt="เกียรติบัตรแข่งขัน Data Science">
+        <p>ได้รับรางวัลรองชนะเลิศอันดับที่ 1 การบรรยาย ในการประชุมวิชาการคณะวิทยาศาสตร์ ครั้งที่ 27 ปี 2567 โดยใช้เทคนิคการวิเคราะห์ข้อมูลด้วย Python และ Machine Learning</p>
+      </div>
+
+      <div class="achievement">
+        <img src="images/cert2.jpeg" alt="ผลงานโครงงานวิจัย">
+        <p>นำเสนอผลงานวิจัยการบรรยายในหัวข้อ "การวิเคราะห์การถดถอยพหุผลลัพธ์ในการทำนายความถี่และความรุนแรงของการเรียกร้องค่าสินไหมทดแทนในการประกันภัยรถยนต์" ในงานประชุมวิชาการระดับปริญญาตรี ด้านคณิตศาสตร์ประยุกต์ ครั้งที่ 13</p>
+      </div>
+
+    </section>
+
+    <a class="back-link" href="index.html">← กลับไปหน้าเรซูเม่</a>
+  </div>
+
+<script src="theme.js"></script>
+
+</body>
+</html>
